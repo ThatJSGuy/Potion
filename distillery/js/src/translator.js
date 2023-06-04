@@ -1,19 +1,11 @@
-// Import the lexer module
-const lexer = require("./lexer");
+const { Lexer } = require("./lexer.js");
 
-// Define the translator function
 function brewPotion(potionCode) {
-  // Convert Potion code into ingredients
-  const ingredients = lexer.tokenize(potionCode);
-
-  // Logic for brewing the potion (translating ingredients to JavaScript)
-  // ...
-
-  // Return the brewed JavaScript code
-  return brewedCode;
+  const lexer = new Lexer(potionCode);
+  const ingredients = lexer.tokenize();
+  return ingredients; // Placeholder logic for brewing the potion
 }
 
-// Export the translator function
 module.exports = {
   brewPotion,
 };

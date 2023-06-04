@@ -1,4 +1,3 @@
-// Token types
 const TokenType = {
   IDENTIFIER: "IDENTIFIER",
   KEYWORD: "KEYWORD",
@@ -11,7 +10,6 @@ const TokenType = {
   EOF: "EOF",
 };
 
-// Token class
 class Token {
   constructor(type, value, line) {
     this.type = type;
@@ -20,7 +18,6 @@ class Token {
   }
 }
 
-// Lexer class
 class Lexer {
   constructor(code) {
     this.code = code;
@@ -33,11 +30,13 @@ class Lexer {
   }
 
   tokenize() {
-    // Your lexer code here
+    // Placeholder implementation
+    return this.tokens;
   }
-
-  // Helper methods for tokenizing, such as processIndentation, skipComment, processString, etc.
 }
 
-// Export the Lexer class
-module.exports = Lexer;
+module.exports = {
+  Lexer,
+  Token,
+  TokenType,
+};
