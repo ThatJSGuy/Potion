@@ -1,3 +1,4 @@
+// AST classes
 class Statement {}
 
 class Assignment extends Statement {
@@ -44,7 +45,41 @@ class Block {
   }
 }
 
-// Other classes...
+// Parser class
+class Parser {
+  constructor(tokens) {
+    this.tokens = tokens;
+    this.position = 0;
+  }
+
+  parse() {
+    const statements = [];
+
+    while (this.position < this.tokens.length) {
+      try {
+        const statement = this.parseStatement();
+        statements.push(statement);
+      } catch (error) {
+        console.error(
+          `Syntax error on line ${this.currentToken().line}: ${error.message}`
+        );
+        return null;
+      }
+    }
+
+    return new Block(statements);
+  }
+
+  parseStatement() {
+    // You need to add logic here to parse different types of statements...
+  }
+
+  currentToken() {
+    return this.tokens[this.position];
+  }
+
+  // Other helper methods for parsing, such as parseExpression, parseBlock, etc.
+}
 
 module.exports = {
   Statement,
@@ -54,5 +89,5 @@ module.exports = {
   ForLoop,
   WhileLoop,
   Block,
-  // Other exported classes...
+  Parser,
 };
