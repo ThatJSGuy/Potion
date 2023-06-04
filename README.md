@@ -1,6 +1,6 @@
-# Potion for Vue.js
+# Potion Psuedo-Lang
 
-![alt text](https://github.com/ThatJSGuy/Potion/assets/potions3.png?raw=true)
+![alt text](https://github.com/ThatJSGuy/Potion/blob/main/assets/potions3.png?raw=true)
 
 
 
