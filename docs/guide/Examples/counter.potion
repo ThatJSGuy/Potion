@@ -1,0 +1,10 @@
+// Counter Potion
+
+// Define a counter variable
+counter is 0
+
+// Increment the counter
+counter is counter + 1
+
+// Print the counter value
+print(counter)

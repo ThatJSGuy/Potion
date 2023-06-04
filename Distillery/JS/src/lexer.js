@@ -1,14 +1,14 @@
 // Token types
 const TokenType = {
-  IDENTIFIER: 'IDENTIFIER',
-  KEYWORD: 'KEYWORD',
-  STRING: 'STRING',
-  NUMBER: 'NUMBER',
-  SYMBOL: 'SYMBOL',
-  INDENT: 'INDENT',
-  DEDENT: 'DEDENT',
-  NEWLINE: 'NEWLINE',
-  EOF: 'EOF',
+  IDENTIFIER: "IDENTIFIER",
+  KEYWORD: "KEYWORD",
+  STRING: "STRING",
+  NUMBER: "NUMBER",
+  SYMBOL: "SYMBOL",
+  INDENT: "INDENT",
+  DEDENT: "DEDENT",
+  NEWLINE: "NEWLINE",
+  EOF: "EOF",
 };
 
 // Token class
@@ -29,7 +29,7 @@ class Lexer {
     this.currentIndent = 0;
     this.line = 1;
     this.position = 0;
-    this.current = '';
+    this.current = "";
   }
 
   tokenize() {

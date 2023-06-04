@@ -1,0 +1,12 @@
+// Todo List Potion
+
+// Define an empty list for tasks
+tasks is []
+
+// Add tasks to the list
+tasks.push("Buy groceries")
+tasks.push("Clean the house")
+tasks.push("Finish work project")
+
+// Print the tasks
+print(tasks)

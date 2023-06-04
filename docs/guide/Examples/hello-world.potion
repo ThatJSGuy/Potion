@@ -1,0 +1,7 @@
+// Hello World Potion
+
+// Define a greeting message
+greeting is "Hello, World!"
+
+// Print the greeting message
+print(greeting)
